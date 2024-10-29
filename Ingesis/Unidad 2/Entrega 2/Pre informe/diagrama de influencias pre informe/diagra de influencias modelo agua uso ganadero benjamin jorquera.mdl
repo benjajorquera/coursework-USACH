@@ -1,0 +1,133 @@
+{UTF-8}
+"Acuíferos, cuencas y embalses"  = A FUNCTION OF( Clima)
+	~	
+	~		|
+
+Alimento para ganado  = A FUNCTION OF( Cultivos,Praderas)
+	~	
+	~		|
+
+Cantidad agua disponible para uso agrónomo  = A FUNCTION OF( Ganado,Proveedores de agua\
+		)
+	~	
+	~		|
+
+Clima  = A FUNCTION OF( Ganado)
+	~	
+	~		|
+
+Cultivos  = A FUNCTION OF( Cantidad agua disponible para uso agrónomo)
+	~	
+	~		|
+
+Demanda producción ganadera  = A FUNCTION OF( )
+	~	
+	~		|
+
+Ganado  = A FUNCTION OF( Alimento para ganado,Cantidad agua disponible para uso agrónomo\
+		,Demanda producción ganadera)
+	~	
+	~		|
+
+Otros servicios y actividades  = A FUNCTION OF( )
+	~	
+	~		|
+
+Praderas  = A FUNCTION OF( Clima)
+	~	
+	~		|
+
+Proveedores de agua  = A FUNCTION OF( "Acuíferos, cuencas y embalses",Otros servicios y actividades\
+		)
+	~	
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 100
+	~	Month
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Month
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP 
+	~	Month [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 1
+	~	Month [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|255-255-255|96,96,100,0
+10,1,Cantidad agua disponible para uso agrónomo,340,172,64,28,8,131,0,0,0,0,0,0,0,0,0,0,0,0
+10,2,Ganado,251,297,28,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,3,Alimento para ganado,475,327,45,19,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,4,Praderas,420,429,29,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,5,Cultivos,631,248,27,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,6,Clima,293,484,20,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,7,Proveedores de agua,476,41,51,19,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,8,"Acuíferos, cuencas y embalses",175,76,60,19,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,9,Otros servicios y actividades,624,124,56,19,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,10,1,2,1,0,43,0,0,64,0,-1--1--1,,1|(339,245)|
+1,11,2,1,1,0,45,0,0,64,0,-1--1--1,,1|(225,229)|
+1,14,4,3,1,0,43,0,0,64,0,-1--1--1,,1|(456,404)|
+1,16,6,4,1,0,43,0,0,64,0,-1--1--1,,1|(389,464)|
+1,17,7,1,1,0,43,0,0,64,0,-1--1--1,,1|(380,92)|
+1,18,8,7,1,0,43,0,0,64,0,-1--1--1,,1|(309,36)|
+1,20,9,7,1,0,45,0,0,64,0,-1--1--1,,1|(572,51)|
+10,22,Demanda producción ganadera,116,324,67,19,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,23,22,2,1,0,45,0,0,64,0,-1--1--1,,1|(165,296)|
+1,28,3,2,1,0,43,0,0,64,0,-1--1--1,,1|(347,335)|
+1,29,5,3,1,0,43,0,0,64,0,-1--1--1,,1|(565,292)|
+1,30,1,5,1,0,43,0,0,64,0,-1--1--1,,1|(493,171)|
+1,31,6,8,1,0,43,0,0,64,0,-1--1--1,,1|(28,331)|
+1,32,2,6,1,0,45,0,0,64,0,-1--1--1,,1|(255,395)|
+12,48,0,448,240,20,20,4,7,0,4,-1,0,0,0,-1--1--1,255-255-0,|0||0-0-0,0,0,0,0,0,0
+-
+12,49,0,292,231,20,20,4,7,0,4,-1,0,0,0,-1--1--1,255-255-0,|0||0-0-0,0,0,0,0,0,0
+-
+12,50,0,143,225,20,20,4,7,0,4,-1,0,0,0,-1--1--1,255-255-0,|0||0-0-0,0,0,0,0,0,0
+-
+12,51,0,347,396,20,20,5,7,0,4,-1,0,0,0,-1--1--1,255-255-0,|0||0-0-0,0,0,0,0,0,0
+-
+///---\\\
+:L<%^E!@
+5:Demanda producción ganadera
+9:Current
+19:100,0
+24:0
+25:0
+26:0
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:0
+72:0
+73:0
+95:0
+96:0
+77:0
+78:0
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:

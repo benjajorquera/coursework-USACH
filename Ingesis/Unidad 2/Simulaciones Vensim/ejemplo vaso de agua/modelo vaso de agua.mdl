@@ -1,0 +1,105 @@
+{UTF-8}
+diferencia=
+	nivel deseado-Nivel actual Vaso
+	~	cc
+	~		|
+
+Flujo agua controlado=
+	0.1*diferencia
+	~	cc/segundo
+	~		|
+
+Nivel actual Vaso= INTEG (
+	Flujo agua controlado,
+		0)
+	~	cc
+	~		|
+
+nivel deseado=
+	200
+	~	cc
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 100
+	~	segundo
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	segundo
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP 
+	~	segundo [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 1
+	~	segundo [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|255-255-255|96,96,100,0
+12,1,0,116,45,72,19,8,7,0,0,-1,0,0,0,0,0,0,0,0,0
+Metáfora hidráulica, visión de lazo cerrado
+10,2,Nivel actual Vaso,299,147,40,20,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+12,3,48,35,148,12,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,5,7,2,4,0,0,22,0,0,0,-1--1--1,,1|(208,148)|
+1,6,7,3,100,0,0,22,0,0,0,-1--1--1,,1|(95,148)|
+11,7,0,152,148,8,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,8,Flujo agua controlado,152,175,35,19,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,9,diferencia,225,304,31,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,10,nivel deseado,368,241,43,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,11,10,9,1,0,0,0,0,64,0,-1--1--1,,1|(315,287)|
+1,12,2,9,1,0,0,0,0,64,0,-1--1--1,,1|(276,225)|
+1,13,9,8,1,0,0,0,0,64,0,-1--1--1,,1|(163,255)|
+///---\\\
+:L<%^E!@
+1:sim_vasoagua_4.vdfx
+1:sim_vasoagua_3.vdfx
+1:sim_vasoagua_2.vdfx
+1:sim_vasoagua_1.vdfx
+4:Time
+5:Nivel actual Vaso
+9:sim_vasoagua_4
+19:100,0
+24:0
+25:100
+26:100
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:1
+72:0
+73:0
+35:Date
+36:YYYY-MM-DD
+37:2000
+38:1
+39:1
+40:7
+41:0
+95:0
+96:0
+77:0
+78:0
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:

@@ -1,0 +1,104 @@
+Preparación PEP2:
+
+Ejercicio 4:
+
+def contador_por_nivel(nodo, actual, deseado):
+	if nodo == null: return 0
+	if actual == deseado: return 1
+	else:
+		return contador_nivel(nodo.izq, actual +1, deseado) + contador_nivel(nodo.der, actual +1, deseado)
+
+def contador_villa(niveles):
+	if niveles == 0: return 0;
+	return contador_villa(niveles - 1) + contador_por_nivel(nodo.raiz, 0, niveles - 1)
+
+
+-----------------------------------------
+Ejercicios propuestos:
+
+Ejercicio 2: Calcular la altura de un árbol binario.
+
+def altura(nodo n):
+	if (izq(n) == 0 and der(n) == 0):
+		return -1;
+	else:
+		altura_izq = altura(izq(n))
+		altura_der = altura(der(n))
+		
+		if altura_izq > altura_der:
+			return altura_izq + 1
+		else return altura_der + 1
+	
+--------------------------------------
+
+Ejercicio 3. Contar la cantidad de nodos de un árbol binario.
+	
+def contador_nodos(nodo n):
+	if (izq(n) == 0 and der(n) == 0):
+		return 1;
+	else
+		return 1 + contador_nodos(izq(n)) + contador_nodos(der(n))
+
+
+--------------------------------------
+
+Ejercicio 4: Contar la cantidad de hojas de un árbol binario.
+
+def contador_hojas(nodo n):
+	if n == null: return 0;
+	if (izq(n) == 0 and der(n) == 0):
+		return 1;
+	else:
+		return contador_hojas(izq(n)) + contador_hojas(der(n))
+		
+
+--------------------------------------
+
+Ejercicio 5: Contar la cantidad de nodos que tienen un solo hijo en un árbol binario:
+
+def contador_un_hijo(nodo n):
+	if (izq(n) == 0 and der(n) == 0):
+		return 0;
+	if (izq(n) == 0 and der(n) != 0) or (izq(n) != 0 and der(n) == 0):
+		return 1;
+	else:
+		return contador_un_hijo(izq(n)) + contador_un hijo(der(n))
+
+----------------------------------------
+
+Ejercicio 14: Fibonacci en:
+
+Recursión de pila:
+
+def fibo(n):
+	if n == 1: return 1
+	else fibo(n-1) + fibo(n-2)
+
+Recursión de cola:
+
+int fib(int n, int a = 0, int b = 1)
+{
+    if (n == 0)
+        return a;
+    if (n == 1)
+        return b;
+    return fib(n - 1, b, a + b);
+}
+
+Iterativo:
+
+int fib(int n)
+{
+  int a = 0, b = 1, c, i;
+  if (n == 0)
+    return a;
+  for (i = 2; i <= n; i++)
+  {
+     c = a + b;
+     a = b;
+     b = c;
+  }
+  return b;
+}
+
+------------------------------------
